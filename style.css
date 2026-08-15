@@ -1,0 +1,2664 @@
+/* =========================================
+   RENT A HUSBAND
+   ESTILOS GENERALES
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf6ee;
+    color: #961123;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 110px 35px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Marco interior */
+
+.hero-frame {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    border: 1px solid #961123;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 30px;
+
+    position: relative;
+}
+
+
+/* =========================================
+   LOGO DE LOS ANILLOS
+   ========================================= */
+
+.rings-logo {
+    width: 150px;
+    height: 80px;
+
+    position: relative;
+
+    margin-bottom: 35px;
+}
+
+.ring {
+    position: absolute;
+
+    width: 65px;
+    height: 65px;
+
+    border: 1.5px solid #961123;
+
+    border-radius: 50%;
+
+    top: 5px;
+}
+
+.ring-one {
+    left: 25px;
+}
+
+.ring-two {
+    left: 60px;
+}
+
+
+/* =========================================
+   TEXTO PEQUEÑO SUPERIOR
+   ========================================= */
+
+.hero-label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   TITULO PRINCIPAL
+   ========================================= */
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 82px);
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FRASE PRINCIPAL
+   ========================================= */
+
+.hero-tagline {
+    font-size: 19px;
+
+    font-style: italic;
+
+    color: #555555;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   LINEA DECORATIVA
+   ========================================= */
+
+.hero-divider {
+    width: 55px;
+
+    height: 1px;
+
+    background-color: #961123;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   DESCRIPCION
+   ========================================= */
+
+.hero-description {
+    max-width: 520px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BOTON
+   ========================================= */
+
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    border: 1px solid #961123;
+
+    background-color: #961123;
+
+    color: #faf6ee;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Efecto cuando pasas el mouse */
+
+.hero-button:hover {
+    background-color: transparent;
+
+    color: #961123;
+}
+
+
+/* =========================================
+   INFORMACION INFERIOR
+   ========================================= */
+
+.hero-details {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #555555;
+}
+
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+
+.navbar {
+    width: 100%;
+
+    height: 75px;
+
+    padding: 0 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #faf6ee;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.25);
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+/* Nombre de la empresa */
+
+.nav-logo {
+    color: #961123;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Enlaces */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.nav-links a {
+    color: #555555;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+
+/* Efecto al pasar el mouse */
+
+.nav-links a:hover {
+    color: #961123;
+}
+/* =========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: 65px;
+
+        padding: 0 20px;
+    }
+
+    .nav-logo {
+        font-size: 12px;
+
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+    .hero {
+        padding: 90px 18px 18px;
+    }
+
+    .hero-frame {
+        min-height: calc(100vh - 108px);
+
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+
+        letter-spacing: 1px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+
+        max-width: 320px;
+    }
+
+    .hero-details {
+        font-size: 7px;
+
+        gap: 7px;
+    }
+        .about {
+        padding: 90px 18px;
+    }
+
+    .about-frame {
+        padding: 55px 22px;
+    }
+
+    .about h3 {
+        font-size: 19px;
+    }
+
+    .about-text {
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+    .about-notice {
+        font-size: 7px;
+
+        gap: 8px;
+    }
+
+    .founder-name {
+        font-size: 22px;
+    }
+
+    .founder-position {
+        font-size: 8px;
+
+        line-height: 1.6;
+    }
+
+        .profile {
+        padding: 90px 18px;
+    }
+
+    .profile-card {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    transition: transform 0.8s ease;
+    }
+    
+    .profile-photo:hover img {
+        transform: none;
+    }
+
+    .profile-photo:hover::after {
+        background-color: transparent;
+    }
+
+    /* =========================================
+   EFECTO FOTOGRÁFICO
+   ========================================= */
+
+    .profile-photo::after {
+        content: "";
+
+        position: absolute;
+
+        inset: 0;
+
+        background-color: rgba(150, 17, 35, 0);
+
+        transition: background-color 0.6s ease;
+
+        pointer-events: none;
+    }
+
+
+    .profile-photo:hover img {
+        transform: scale(1.04);
+    }
+
+
+    .profile-photo:hover::after {
+        background-color: rgba(150, 17, 35, 0.06);
+    }
+
+    .profile-information {
+        padding: 40px 25px;
+    }
+
+    .profile-information h3 {
+        font-size: 55px;
+    }
+
+    .detail-value {
+        font-size: 12px;
+    }
+
+    .profile-button {
+        align-self: center;
+    }
+
+        .profile-actions {
+        justify-content: center;
+    }
+
+    .archive-content {
+        padding: 40px 25px;
+
+        max-height: 85vh;
+    }
+
+    .archive-content h2 {
+        font-size: 30px;
+    }
+
+    .archive-details div {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+
+    .archive-details strong {
+        text-align: left;
+    }
+
+    .archive-status {
+        line-height: 1.8;
+    }
+
+        .interview {
+        padding: 90px 18px;
+    }
+
+    .interview-form {
+        padding: 35px 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .interview-header h2 {
+        font-size: 38px;
+    }
+
+    .interview-intro {
+        font-size: 12px;
+    }
+
+    .form-section-title {
+        font-size: 8px;
+    }
+
+        .protocol-content {
+        padding: 40px 22px;
+
+        max-height: 85vh;
+    }
+
+    .protocol-item {
+        grid-template-columns: 30px 1fr;
+
+        gap: 10px;
+
+        padding: 20px 0;
+    }
+
+    .protocol-item h3 {
+        font-size: 16px;
+    }
+
+    .protocol-item p {
+        font-size: 9px;
+
+        line-height: 1.7;
+    }
+
+    .protocol-footer {
+        text-align: center;
+    }
+
+        .confirmation-content {
+        padding: 45px 25px;
+    }
+
+    .confirmation-content h2 {
+        font-size: 28px;
+    }
+
+    .confirmation-name {
+        font-size: 19px;
+    }
+
+    .confirmation-message {
+        font-size: 10px;
+    }
+
+        /* FOOTER */
+
+    .site-footer {
+        padding: 60px 25px 25px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .footer-brand {
+        padding-right: 0;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .footer-signature {
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   SOBRE NOSOTROS
+   ========================================= */
+
+.about {
+    min-height: 100vh;
+
+    padding: 120px 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: #faf6ee;
+}
+
+
+.about-frame {
+    width: 100%;
+
+    max-width: 1000px;
+
+    text-align: center;
+
+    padding: 80px 80px;
+
+    border: 1px solid rgba(150, 17, 35, 0.35);
+
+    position: relative;
+}
+
+
+/* Número de sección */
+
+.section-number {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #961123;
+
+    margin-bottom: 25px;
+}
+
+
+/* Etiqueta */
+
+.section-label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #555555;
+
+    margin-bottom: 15px;
+}
+
+
+/* Título */
+
+.about h2 {
+    font-size: clamp(38px, 5vw, 60px);
+
+    font-weight: 500;
+
+    color: #961123;
+
+    margin-bottom: 20px;
+}
+
+
+/* Línea */
+
+.about-line {
+    width: 50px;
+
+    height: 1px;
+
+    background-color: #961123;
+
+    margin: 0 auto 35px;
+}
+
+
+/* Subtítulo */
+
+.about h3 {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    font-weight: 400;
+
+    color: #961123;
+}
+
+
+/* Texto */
+
+.about-text {
+    max-width: 650px;
+
+    margin: 0 auto 18px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    color: #555555;
+}
+
+
+/* Aviso */
+
+.about-notice {
+    margin: 45px auto 0;
+
+    padding: 18px 20px;
+
+    max-width: 700px;
+
+    border-top: 1px solid rgba(150, 17, 35, 0.3);
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.3);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #961123;
+}
+
+
+/* =========================================
+   FUNDADOR
+   ========================================= */
+
+.founder {
+    margin-top: 65px;
+}
+
+
+.founder-line {
+    width: 35px;
+
+    height: 1px;
+
+    background-color: #961123;
+
+    margin: 0 auto 20px;
+}
+
+
+.founder-name {
+    font-size: 25px;
+
+    color: #961123;
+
+    margin-bottom: 8px;
+}
+
+
+.founder-position {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #555555;
+
+    margin-bottom: 25px;
+}
+
+
+.founder-quote {
+    font-size: 14px;
+
+    font-style: italic;
+
+    color: #555555;
+}
+
+/* =========================================
+   PERFIL V
+   ========================================= */
+
+.profile {
+    min-height: 100vh;
+
+    padding: 130px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #faf6ee;
+}
+
+
+.profile-container {
+    width: 100%;
+
+    max-width: 1100px;
+}
+
+
+/* Encabezado */
+
+.profile-header {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.profile-header h2 {
+    font-size: clamp(42px, 6vw, 70px);
+
+    font-weight: 500;
+
+    color: #961123;
+
+    margin-bottom: 15px;
+}
+
+
+.profile-status {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #961123;
+}
+
+
+/* =========================================
+   TARJETA DEL PERFIL
+   ========================================= */
+
+.profile-card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border: 1px solid rgba(150, 17, 35, 0.4);
+
+    background-color: #faf6ee;
+}
+
+
+/* =========================================
+   FOTOGRAFÍAS
+   ========================================= */
+
+.profile-photos {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 1px;
+
+    background-color: rgba(150, 17, 35, 0.3);
+}
+
+
+.profile-photo {
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: #eee8dd;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.profile-photo span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #961123;
+
+    border: 1px solid #961123;
+
+    padding: 8px 12px;
+
+    background-color: #faf6ee;
+}
+
+
+/* =========================================
+   INFORMACIÓN
+   ========================================= */
+
+.profile-information {
+    padding: 55px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.profile-code {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #555555;
+
+    margin-bottom: 15px;
+}
+
+
+.profile-information h3 {
+    font-size: 70px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 15px;
+}
+
+
+.profile-description {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    max-width: 450px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   DATOS
+   ========================================= */
+
+.profile-details {
+    border-top: 1px solid rgba(150, 17, 35, 0.25);
+
+    margin-bottom: 30px;
+}
+
+
+.detail {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.15);
+}
+
+
+.detail-label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #555555;
+}
+
+
+.detail-value {
+    font-size: 14px;
+
+    color: #961123;
+}
+
+
+.available {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   INFORMACIÓN CONFIDENCIAL
+   ========================================= */
+
+.profile-warning {
+    padding: 18px;
+
+    border: 1px solid rgba(150, 17, 35, 0.25);
+
+    margin-bottom: 30px;
+}
+
+
+.warning-title {
+    display: block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #961123;
+
+    margin-bottom: 10px;
+}
+
+
+.profile-warning p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
+
+.profile-button {
+    align-self: flex-start;
+
+    padding: 14px 25px;
+
+    border: 1px solid #961123;
+
+    background-color: #961123;
+
+    color: #faf6ee;
+
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    transition: all 0.3s ease;
+}
+
+
+.profile-button:hover {
+    background-color: transparent;
+
+    color: #961123;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+/* =========================================
+   BOTONES DEL PERFIL
+   ========================================= */
+
+.profile-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.archive-button {
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   VENTANA DEL ARCHIVO CONFIDENCIAL
+   ========================================= */
+
+.archive-modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(40, 10, 15, 0.72);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    z-index: 2000;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+/* Cuando el archivo está abierto */
+
+.archive-modal.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================
+   CONTENIDO DEL ARCHIVO
+   ========================================= */
+
+.archive-content {
+    width: 100%;
+
+    max-width: 650px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 55px;
+
+    background-color: #faf6ee;
+
+    border: 1px solid #961123;
+
+    position: relative;
+
+    transform: translateY(20px) scale(0.97);
+
+    transition: transform 0.35s ease;
+}
+
+
+/* Animación de entrada */
+
+.archive-modal.active .archive-content {
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================
+   BOTÓN X
+   ========================================= */
+
+.archive-close {
+    position: absolute;
+
+    top: 18px;
+    right: 22px;
+
+    background: transparent;
+
+    border: none;
+
+    color: #961123;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.archive-code {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #555555;
+
+    margin-bottom: 18px;
+}
+
+
+.archive-content h2 {
+    font-size: 38px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 18px;
+}
+
+
+.archive-line {
+    width: 45px;
+
+    height: 1px;
+
+    background-color: #961123;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   ESTADO
+   ========================================= */
+
+.archive-status {
+    padding: 15px;
+
+    border: 1px solid rgba(150, 17, 35, 0.25);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    color: #555555;
+
+    margin-bottom: 30px;
+}
+
+
+.archive-status strong {
+    color: #961123;
+
+    margin-left: 8px;
+}
+
+
+/* =========================================
+   DATOS DEL ARCHIVO
+   ========================================= */
+
+.archive-details {
+    border-top: 1px solid rgba(150, 17, 35, 0.25);
+
+    margin-bottom: 30px;
+}
+
+
+.archive-details div {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.15);
+}
+
+
+.archive-details span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #555555;
+}
+
+
+.archive-details strong {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #961123;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   NOTA CONFIDENCIAL
+   ========================================= */
+
+.archive-note {
+    padding: 20px;
+
+    border-left: 2px solid #961123;
+
+    background-color: rgba(150, 17, 35, 0.04);
+
+    margin-bottom: 30px;
+}
+
+
+.archive-note p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    margin-bottom: 10px;
+}
+
+
+.archive-note p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+   ========================================= */
+
+.archive-close-button {
+    display: block;
+
+    margin: 0 auto;
+
+    padding: 13px 25px;
+
+    background-color: transparent;
+
+    border: 1px solid #961123;
+
+    color: #961123;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.archive-close-button:hover {
+    background-color: #961123;
+
+    color: #faf6ee;
+}
+/* =========================================
+   RESTRICCIONES DEL PERFIL
+   ========================================= */
+
+.archive-restrictions {
+    margin-bottom: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(150, 17, 35, 0.2);
+}
+
+
+.archive-section-title {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #961123;
+
+    margin-bottom: 15px;
+}
+
+
+.archive-restrictions ul {
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.archive-restrictions li {
+    position: relative;
+
+    padding-left: 18px;
+
+    margin-bottom: 9px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #555555;
+}
+
+
+.archive-restrictions li::before {
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #961123;
+}
+
+
+/* =========================================
+   AUTORIZACIÓN
+   ========================================= */
+
+.archive-authorization {
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(150, 17, 35, 0.2);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    text-align: right;
+}
+
+
+.authorization-header {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #961123;
+
+    margin-bottom: 15px;
+}
+
+
+.archive-authorization p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #555555;
+
+    margin-bottom: 4px;
+}
+
+
+.archive-authorization strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 8px;
+}
+
+
+.archive-authorization span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #555555;
+}
+
+/* =========================================
+   ENTREVISTA PRIVADA
+   ========================================= */
+
+.interview {
+    min-height: 100vh;
+
+    padding: 130px 35px;
+
+    background-color: #faf6ee;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.interview-container {
+    width: 100%;
+
+    max-width: 950px;
+}
+
+
+/* Encabezado */
+
+.interview-header {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.interview-header h2 {
+    font-size: clamp(40px, 5vw, 62px);
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 20px;
+}
+
+
+.interview-intro {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   FORMULARIO
+   ========================================= */
+
+.interview-form {
+    border: 1px solid rgba(150, 17, 35, 0.4);
+
+    padding: 55px;
+}
+
+
+/* Títulos internos */
+
+.form-section-title {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    color: #961123;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.25);
+
+    margin-bottom: 30px;
+}
+
+
+.form-space {
+    margin-top: 45px;
+}
+
+
+/* Filas */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Grupo */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #555555;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 12px;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.35);
+
+    background-color: transparent;
+
+    color: #961123;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+
+    border-radius: 0;
+
+    transition: border-color 0.3s ease;
+}
+
+
+/* Cuando el usuario selecciona el campo */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-bottom-color: #961123;
+}
+
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999999;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+
+    line-height: 1.7;
+}
+
+
+/* Select */
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CONSENTIMIENTO
+   ========================================= */
+
+.form-consent {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin: 15px 0 30px;
+}
+
+
+.form-consent input {
+    margin-top: 3px;
+
+    accent-color: #961123;
+
+    cursor: pointer;
+}
+
+
+.form-consent label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #555555;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BOTÓN DE ENVÍO
+   ========================================= */
+
+.interview-submit {
+    width: 100%;
+
+    padding: 17px;
+
+    border: 1px solid #961123;
+
+    background-color: #961123;
+
+    color: #faf6ee;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.interview-submit:hover {
+    background-color: transparent;
+
+    color: #961123;
+}
+
+
+/* Texto inferior */
+
+.form-footer {
+    margin-top: 20px;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    color: #777777;
+}
+
+/* =========================================
+   ENLACE DE PROTOCOLOS
+   ========================================= */
+
+.protocol-link {
+    display: inline;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #961123;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: inherit;
+
+    text-decoration: underline;
+
+    text-underline-offset: 3px;
+
+    cursor: pointer;
+}
+
+
+.protocol-link:hover {
+    color: #555555;
+}
+
+
+/* =========================================
+   VENTANA DE PROTOCOLOS
+   ========================================= */
+
+.protocol-modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(40, 10, 15, 0.72);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    z-index: 2100;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+
+.protocol-modal.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* Contenido */
+
+.protocol-content {
+    width: 100%;
+
+    max-width: 750px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 55px;
+
+    background-color: #faf6ee;
+
+    border: 1px solid #961123;
+
+    position: relative;
+
+    transform: translateY(20px) scale(0.97);
+
+    transition: transform 0.35s ease;
+}
+
+
+.protocol-modal.active .protocol-content {
+    transform: translateY(0) scale(1);
+}
+
+
+/* Botón X */
+
+.protocol-close {
+    position: absolute;
+
+    top: 18px;
+    right: 22px;
+
+    background: transparent;
+
+    border: none;
+
+    color: #961123;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* Introducción */
+
+.protocol-intro {
+    max-width: 600px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   LISTA DE PROTOCOLOS
+   ========================================= */
+
+.protocol-list {
+    border-top: 1px solid rgba(150, 17, 35, 0.25);
+}
+
+
+.protocol-item {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 15px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.15);
+}
+
+
+.protocol-item > span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #961123;
+
+    padding-top: 3px;
+}
+
+
+.protocol-item h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 8px;
+}
+
+
+.protocol-item p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: #555555;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   PIE DEL DOCUMENTO
+   ========================================= */
+
+.protocol-footer {
+    margin-top: 35px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(150, 17, 35, 0.25);
+
+    text-align: right;
+}
+
+
+.protocol-footer p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 8px;
+}
+
+
+.protocol-footer strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    color: #961123;
+}
+
+/* =========================================
+   ESTADO DE PROTOCOLOS
+   ========================================= */
+
+.protocol-status {
+    margin-top: -15px;
+
+    margin-bottom: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 0.5px;
+
+    color: #777777;
+
+    transition: color 0.3s ease;
+}
+
+
+.protocol-status.protocol-read {
+    color: #961123;
+}
+
+/* =========================================
+   VENTANA DE CONFIRMACIÓN
+   ========================================= */
+
+.confirmation-modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(40, 10, 15, 0.78);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    z-index: 2200;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.4s ease,
+        visibility 0.4s ease;
+}
+
+
+.confirmation-modal.active {
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================================
+   TARJETA
+   ========================================= */
+
+.confirmation-content {
+    width: 100%;
+
+    max-width: 560px;
+
+    padding: 60px 55px;
+
+    background-color: #faf6ee;
+
+    border: 1px solid #961123;
+
+    text-align: center;
+
+    transform: translateY(20px) scale(0.96);
+
+    transition: transform 0.4s ease;
+}
+
+
+.confirmation-modal.active .confirmation-content {
+    transform: translateY(0) scale(1);
+}
+
+
+/* =========================================
+   SÍMBOLO DE CONFIRMACIÓN
+   ========================================= */
+
+.confirmation-mark {
+    width: 45px;
+
+    height: 45px;
+
+    margin: 0 auto 25px;
+
+    border: 1px solid #961123;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #961123;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.confirmation-code {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2.5px;
+
+    color: #777777;
+
+    margin-bottom: 18px;
+}
+
+
+.confirmation-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 18px;
+}
+
+
+.confirmation-line {
+    width: 45px;
+
+    height: 1px;
+
+    background-color: #961123;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================================
+   NOMBRE DEL SOLICITANTE
+   ========================================= */
+
+.confirmation-name {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    color: #961123;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   MENSAJE
+   ========================================= */
+
+.confirmation-message {
+    max-width: 430px;
+
+    margin: 0 auto 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   REFERENCIA
+   ========================================= */
+
+.confirmation-reference {
+    padding: 18px;
+
+    border-top: 1px solid rgba(150, 17, 35, 0.2);
+
+    border-bottom: 1px solid rgba(150, 17, 35, 0.2);
+
+    margin-bottom: 30px;
+}
+
+
+.confirmation-reference span {
+    display: block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 7px;
+}
+
+.profile-reference {
+    margin-top: 18px;
+}
+
+
+.confirmation-reference strong {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: #961123;
+}
+
+
+/* =========================================
+   FIRMA
+   ========================================= */
+
+.confirmation-signature {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+
+.confirmation-signature span {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 8px;
+}
+
+
+.confirmation-signature strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #961123;
+
+    margin-bottom: 5px;
+}
+
+
+.confirmation-signature small {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   BOTÓN
+   ========================================= */
+
+.confirmation-close {
+    padding: 13px 25px;
+
+    border: 1px solid #961123;
+
+    background-color: transparent;
+
+    color: #961123;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.confirmation-close:hover {
+    background-color: #961123;
+
+    color: #faf6ee;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+    background-color: #961123;
+
+    color: #faf6ee;
+
+    padding: 75px 8% 30px;
+}
+
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+   ========================================= */
+
+.footer-main {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1.4fr;
+
+    gap: 55px;
+}
+
+
+/* =========================================
+   MARCA
+   ========================================= */
+
+.footer-brand {
+    padding-right: 30px;
+}
+
+
+.footer-logo {
+    width: 42px;
+
+    height: 42px;
+
+    border: 1px solid #faf6ee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-brand h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+
+    color: #faf6ee;
+}
+
+
+.footer-brand p {
+    max-width: 280px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: rgba(250, 246, 238, 0.75);
+}
+
+
+/* =========================================
+   COLUMNAS
+   ========================================= */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.footer-column h3 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #faf6ee;
+
+    margin-bottom: 20px;
+}
+
+
+.footer-column a {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    color: rgba(250, 246, 238, 0.72);
+
+    text-decoration: none;
+
+    margin-bottom: 12px;
+
+    transition: color 0.3s ease;
+}
+
+
+.footer-column a:hover {
+    color: #faf6ee;
+}
+
+
+/* =========================================
+   AVISO
+   ========================================= */
+
+.footer-notice p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.8;
+
+    color: rgba(250, 246, 238, 0.72);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   LÍNEA
+   ========================================= */
+
+.footer-line {
+    max-width: 1200px;
+
+    height: 1px;
+
+    margin: 55px auto 25px;
+
+    background-color: rgba(250, 246, 238, 0.25);
+}
+
+
+/* =========================================
+   PARTE INFERIOR
+   ========================================= */
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: rgba(250, 246, 238, 0.55);
+}
+
+
+/* =========================================
+   FIRMA DE JIMIN
+   ========================================= */
+
+.footer-signature {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(250, 246, 238, 0.15);
+
+    text-align: right;
+}
+
+
+.footer-signature span {
+    display: block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+
+    color: rgba(250, 246, 238, 0.5);
+
+    margin-bottom: 7px;
+}
+
+
+.footer-signature strong {
+    display: block;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    color: #faf6ee;
+
+    margin-bottom: 4px;
+}
+
+
+.footer-signature small {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+
+    color: rgba(250, 246, 238, 0.5);
+}
