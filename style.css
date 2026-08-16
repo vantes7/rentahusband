@@ -1405,7 +1405,7 @@ body {
 .archive-close-button {
     display: block;
 
-    margin: 0 auto;
+    margin: 30px auto 0;
 
     padding: 13px 25px;
 
@@ -1499,15 +1499,10 @@ body {
 
 .archive-authorization {
     padding-top: 25px;
-
     border-top: 1px solid rgba(150, 17, 35, 0.2);
-
     display: flex;
-
     flex-direction: column;
-
     align-items: flex-end;
-
     text-align: right;
 }
 
@@ -2058,31 +2053,25 @@ body {
 
     border-top: 1px solid rgba(150, 17, 35, 0.25);
 
-    text-align: right;
+    text-align: center;
 }
 
 
 .protocol-footer p {
     font-family: Arial, Helvetica, sans-serif;
-
     font-size: 7px;
-
     letter-spacing: 2px;
-
     color: #777777;
-
     margin-bottom: 8px;
+    text-align: center;
 }
-
 
 .protocol-footer strong {
     font-family: Georgia, "Times New Roman", serif;
-
     font-size: 13px;
-
     font-weight: 400;
-
     color: #961123;
+    text-align: center;
 }
 
 /* =========================================
