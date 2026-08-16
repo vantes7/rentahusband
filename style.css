@@ -3412,3 +3412,149 @@ body {
     }
 
 }
+
+/* =========================================
+   AJUSTES FINALES — VENTANAS EN CELULAR
+   ========================================= */
+
+@media screen and (max-width: 700px) {
+
+    /* =====================================
+       ARCHIVO COMPLETO
+       ===================================== */
+
+    .archive-modal {
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .archive-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        padding: 45px 22px 30px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .archive-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .archive-details {
+        width: 100%;
+    }
+
+    .archive-details div {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .archive-details strong {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .archive-note {
+        width: 100%;
+    }
+
+    .archive-restrictions {
+        width: 100%;
+    }
+
+    .archive-authorization {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .authorization-header {
+        text-align: center;
+    }
+
+    .archive-authorization p,
+    .archive-authorization strong,
+    .archive-authorization span {
+        text-align: center;
+    }
+
+    .archive-close-button {
+        margin: 25px auto 0;
+    }
+
+
+    /* =====================================
+       PROTOCOLOS DE CONFIDENCIALIDAD
+       ===================================== */
+
+    .protocol-modal {
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .protocol-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        padding: 45px 22px 30px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .protocol-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .protocol-intro {
+        width: 100%;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .protocol-list {
+        width: 100%;
+    }
+
+    .protocol-item {
+        width: 100%;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+    }
+
+    .protocol-item h3 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .protocol-item p {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+
+    /* PIE DE LOS PROTOCOLOS */
+
+    .protocol-footer {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .protocol-footer p,
+    .protocol-footer strong {
+        display: block;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    #closeProtocolsButton {
+        display: block;
+        margin: 25px auto 0;
+    }
+
+}
