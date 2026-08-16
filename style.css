@@ -2662,3 +2662,753 @@ body {
 
     color: rgba(250, 246, 238, 0.5);
 }
+
+/* =========================================
+   AJUSTES PARA CELULARES
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* -------------------------------------
+       AJUSTE GENERAL
+       ------------------------------------- */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* -------------------------------------
+       BARRA DE NAVEGACIÓN
+       ------------------------------------- */
+
+    .navbar {
+        width: 100%;
+        padding: 20px 25px;
+    }
+
+    .nav-logo {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+
+    /* -------------------------------------
+       HERO
+       ------------------------------------- */
+
+    .hero {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .hero-frame {
+        width: 100%;
+        max-width: 100%;
+        padding: 55px 25px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 10vw, 52px);
+        word-break: normal;
+    }
+
+    .hero-description {
+        max-width: 100%;
+    }
+
+
+    /* -------------------------------------
+       SOBRE NOSOTROS
+       ------------------------------------- */
+
+    .about {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .about-frame {
+        width: 100%;
+        max-width: 100%;
+        padding: 45px 25px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .about-notice {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+
+    /* -------------------------------------
+       PERFIL V
+       ------------------------------------- */
+
+    .profile {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .profile-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photos {
+        width: 100%;
+    }
+
+    .profile-photo {
+        width: 100%;
+    }
+
+    .profile-information {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .profile-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+    }
+
+    .profile-button {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* -------------------------------------
+       ENTREVISTA
+       ------------------------------------- */
+
+    .interview {
+        width: 100%;
+        padding: 60px 16px;
+    }
+
+    .interview-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .interview-header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .interview-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .interview-submit {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* -------------------------------------
+       PROTOCOLOS
+       ------------------------------------- */
+
+    .protocol-modal {
+        padding: 15px;
+    }
+
+    .protocol-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        padding: 40px 25px;
+        overflow-y: auto;
+    }
+
+
+    /* -------------------------------------
+       ARCHIVO COMPLETO
+       ------------------------------------- */
+
+    .archive-modal {
+        padding: 15px;
+    }
+
+    .archive-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        padding: 40px 25px;
+        overflow-y: auto;
+    }
+
+
+    /* -------------------------------------
+       CONFIRMACIÓN
+       ------------------------------------- */
+
+    .confirmation-modal {
+        padding: 15px;
+    }
+
+    .confirmation-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 40px 22px;
+    }
+
+    .confirmation-content h2 {
+        font-size: 27px;
+    }
+
+    .confirmation-name {
+        font-size: 20px;
+        word-break: break-word;
+    }
+
+
+    /* -------------------------------------
+       FOOTER
+       ------------------------------------- */
+
+    .site-footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 55px 25px 30px;
+    }
+
+    .footer-main {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column a {
+        font-size: 10px;
+    }
+
+    .footer-notice {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-bottom p {
+        max-width: 100%;
+    }
+
+    .footer-signature {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* =========================================
+   RENT A HUSBAND
+   DISEÑO RESPONSIVE FINAL
+   ========================================= */
+
+@media screen and (max-width: 700px) {
+
+    /* =====================================
+       CONFIGURACIÓN GENERAL
+       ===================================== */
+
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+
+    /* =====================================
+       NAVEGACIÓN
+       ===================================== */
+
+    .navbar {
+        width: 100%;
+        height: 65px;
+        padding: 0 18px;
+    }
+
+    .nav-logo {
+        font-size: 11px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .nav-links a {
+        font-size: 7px;
+        letter-spacing: 0.8px;
+        white-space: nowrap;
+    }
+
+
+    /* =====================================
+       HERO
+       ===================================== */
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        padding: 85px 15px 20px;
+    }
+
+    .hero-frame {
+        width: 100%;
+        min-height: calc(100vh - 105px);
+        padding: 45px 18px;
+    }
+
+    .rings-logo {
+        transform: scale(0.8);
+        margin-bottom: 20px;
+    }
+
+    .hero-label {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        font-size: clamp(30px, 9vw, 42px);
+        letter-spacing: 1px;
+        line-height: 1.15;
+        word-break: normal;
+    }
+
+    .hero-tagline {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 300px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .hero-button {
+        max-width: 100%;
+        padding: 14px 20px;
+        font-size: 9px;
+    }
+
+    .hero-details {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 7px;
+        gap: 6px;
+    }
+
+
+    /* =====================================
+       SOBRE NOSOTROS
+       ===================================== */
+
+    .about {
+        width: 100%;
+        min-height: auto;
+        padding: 80px 15px;
+    }
+
+    .about-frame {
+        width: 100%;
+        max-width: 100%;
+        padding: 50px 20px;
+    }
+
+    .about h2 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .about h3 {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: 100%;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .about-notice {
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 7px;
+        font-size: 7px;
+        line-height: 1.6;
+    }
+
+    .founder {
+        margin-top: 45px;
+    }
+
+
+    /* =====================================
+       PERFIL V
+       ===================================== */
+
+    .profile {
+        width: 100%;
+        min-height: auto;
+        padding: 80px 15px;
+    }
+
+    .profile-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-header {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .profile-header h2 {
+        font-size: 40px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo {
+        width: 100%;
+        min-height: 280px;
+    }
+
+    .profile-information {
+        width: 100%;
+        padding: 35px 22px;
+    }
+
+    .profile-information h3 {
+        font-size: 52px;
+    }
+
+    .profile-description {
+        width: 100%;
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .detail {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .detail-label,
+    .detail-value {
+        font-size: 10px;
+    }
+
+    .profile-warning {
+        width: 100%;
+    }
+
+    .profile-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .profile-button {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    /* =====================================
+       ENTREVISTA
+       ===================================== */
+
+    .interview {
+        width: 100%;
+        min-height: auto;
+        padding: 80px 15px;
+    }
+
+    .interview-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .interview-header {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .interview-header h2 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .interview-intro {
+        width: 100%;
+        max-width: 100%;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    .interview-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 20px;
+    }
+
+    .form-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .form-consent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-consent label {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+
+    .interview-submit {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-footer {
+        font-size: 8px;
+    }
+
+
+    /* =====================================
+       VENTANAS EMERGENTES
+       ===================================== */
+
+    .protocol-modal,
+    .archive-modal,
+    .confirmation-modal {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .protocol-content,
+    .archive-content,
+    .confirmation-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 35px 20px;
+    }
+
+    .confirmation-content h2 {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .confirmation-name {
+        font-size: 19px;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =====================================
+       FOOTER
+       ===================================== */
+
+    .site-footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 55px 22px 30px;
+    }
+
+    .footer-main {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-brand,
+    .footer-column,
+    .footer-notice {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .footer-brand h2 {
+        font-size: 28px;
+    }
+
+    .footer-brand p {
+        width: 100%;
+        max-width: 300px;
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-column a {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-notice p {
+        width: 100%;
+        max-width: 320px;
+        font-size: 9px;
+        line-height: 1.8;
+    }
+
+    .footer-line {
+        width: 100%;
+        max-width: 100%;
+        margin: 40px auto 25px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 7px;
+        line-height: 1.7;
+    }
+
+    .footer-signature {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
